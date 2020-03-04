@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The official Nocturne Network Forum!">
+    <meta name="keywords" content="nocturne, nocturne network, network, forum, Nocturne network forum, minecraft, server">
+    <meta name="author" content="Joren Metz">
+    <link rel="stylesheet" href="./css/style-homepage.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <!-- Icons made by https://www.flaticon.com/authors/those-icons from https://www.flaticon.com/ -->
+    <title>Nocturne Network</title>
+
+    <link rel="shortcut icon" href="./img/logo_NN.png">
+
+  <body>
+
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li class="navhover"><a href="index.html" class="nav-link">Home</a></li>
+          <!-- Het forum is NIET zelfgemaakt, dit is alleen voor de layout. De forumsoftware wordt later nog gebruikt voor andere doeleinden -->
+          <li class="navhover"><a class="nav-link" href="http://nocturnenetwork.epizy.com/?i=1">Forum</a></li>
+          <!-- Hetzlefde geld voor de store -->
+          <li class="navhover"><a class="nav-link" href="https://nocturnestore.buycraft.net">Store</a></li>
+          <li class="navhover"><a class="nav-link" href="aboutpage.html">About</a></li>
+          <li class="navhover"><a class="nav-link" href="contactpage.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-container">
+
+        <div class="main-image">
+          <img id="main-image" src="./img/main-image.png" width="100%" alt="main-image">
+        </div>
+
+        </div>
+      </section>
+
+      <h1 id="news-header">Recent News</h1>
+
+      <section class="news-container">
+        <div class="card">
+          <div class="date">
+            <h5 id="date">27.05.2019</h3>
+          </div>
+          <div class="profile-sidebar">
+            <img id="news-image1" src="./img/news-image1.png" alt="">
+
+          </div>
+
+          <div class="profile-main">
+            <h2 class="profile-name">New server host!</h2>
+            <p class="profile-body">
+
+              Hello everyone! We bring you the latest news: We got a  new server host! Our old host was unreliable and
+              not trust worthy. We started the proces of moving all the files to the new host which is way better in many
+              ways. This switch between hosts will allow us to grow easier in the near future.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="date">
+          <h5 id="date">27.05.2019</h3>
+        </div>
+        <div class="profile-sidebar">
+          <img id="news-image2" src="./img/news-image2.png" alt="">
+
+        </div>
+
+        <div class="profile-main">
+          <h2 class="profile-name">Competetive Towny released.</h2>
+          <p class="profile-body">
+
+            Hi y'all! Our developers recently made the finishing touches on the new Towny gamemode: Competetive.
+            This new gamemode is exactly for the kind of players that seek that extra thrill and competition. Read more about
+            the new Competetive Towny gamemode on the forums. The release date will be the 1st of june.
+
+          </p>
+        </div>
+      </div>
+
+      </section>
+
+    </main>
+
+    <hr class="spacing" size="30">
+
+    <section class="intro-container">
+      <div id="text-spacing">
+
+        <div class="b2-h1">
+          <h1>MAIN SERVER FOCUS</h1>
+          <h5>Giving the player the best playing experience</h5>
+        </div>
+
+        <p id="b2-p1">
+          Our main server focus is to work as hard as possible to tweak and fine tune everything so YOU, the player, will have
+          the best possbile playing experience on our network. Of course, we can not do this alone! That's why we  need your help.
+          Do you have any suggestions for the server? Let us know <a href="contactpage.html"><b>Here</b></a>.
+        </p>
+
+        <div class="b2-h1"><h5>Click to copy the server ip</h5></div>
+
+        <div class="news-footer">
+          <button class="footer_button" onclick="copyStringToClipboard()" id = 'btn1'>nocturne.network</button>
+          <span id="pwd_spn" class="password-spawn"></span>
+        </div>
+
+        <!-- niet zelf geschreven, alleen voor layout punten -->
+        <script type="text/javascript">
+          function copyStringToClipboard () {
+           var str = document.getElementById("btn1").innerText;
+
+           var el = document.createElement('textarea');
+
+           el.value = str;
+
+           el.setAttribute('readonly', '');
+           el.style = {position: 'absolute', left: '-9999px'};
+           document.body.appendChild(el);
+
+           el.select();
+
+           document.execCommand('copy');
+
+           document.body.removeChild(el);
+        }
+        </script>
+        <h2 id="b2-h2">Gamemodes</h2>
+        <div class="container-cards">
+          <div class="gamemode-card">
+            <div class="card-image">
+                <img src="./img/gamemode-3.png" alt="">
+            </div>
+            <div class="card-text">
+              <h2>Towny</h2>
+              <br>
+              <p>
+                 Players can create towns or join towns and build within
+                 their claimed area. Players may own their own plot,
+                 sell plots or buy more plots to build on. Together,
+                 the players of the town contribute to its development
+                 and improve the town and expand it. Join jobs to earn money
+                 and use boosters to multiply your salary!
+              </p>
+            </div>
+          </div>
+
+          <div class="gamemode-card">
+            <div class="card-image">
+                <img src="./img/gamemode-1.png" alt="">
+            </div>
+            <div class="card-text">
+              <h2>Skyblock</h2>
+              <br>
+              <p>
+                We introduce our on take on the famous minecraft gamemode
+                skyblock. We developed a system that allows you to use the
+                famous plugin worldedit with the blocks in your surivival inventory.
+                Skyblock also offers a series of unique quests and plugins featured
+                on no other server. Come check it out!
+              </p>
+            </div>
+          </div>
+
+          <div class="gamemode-card">
+            <div class="card-image">
+                <img src="./img/gamemode-2.jpg" alt="">
+            </div>
+            <div class="card-text">
+              <h2>Creative</h2>
+              <br>
+              <p>
+                On our creative server, you can let your mind free and build
+                whatever you want. Worldedit and VoxelSniper are here to
+                assist you in creating the most wonderful creations. You can also
+                earn free ranks by building, the more experienced the build is, the
+                higher rank you will get.
+              </p>
+            </div>
+          </div>
+
+    </section>
+
+    <hr class="spacing" size="30">
+
+    <section class="slider">
+
+      <div class="slideshow-container">
+
+        <div class="b5-h1">
+          <h1>Gallery</h1>
+          <h5 id="b5-h5">Enjoy some beautiful server pictures</h5>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/slide1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/slide2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/slide3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/slide4.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+    </section>
+
+    <!-- Javascript niet door mij gemaakt, alleen voor layout punten. -->
+    <script type="text/javascript">
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+
+        if (n < 1) {slideIndex = slides.length}
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+    <hr class="spacing" size="30">
+
+    <footer>
+
+      <div class="footer-main">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <div class="footer-box">
+              <h6>Need help?</h6>
+              <ul>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="faqpage.html">FAQ's</a></li>
+                <li><a href="termspage.html">Terms</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+              </ul>
+
+            </div>
+          </div>
+            <div class="footer-left">
+              <div class="footer-box">
+              <h6>About</h6>
+              <ul>
+                <li><a href="aboutpage.html">Team</a></li>
+                <li><a href="contactpage.html">Staff applications</a></li>
+                <li><a href="termspage.html">Terms</a></li>
+              </ul>
+
+            </div>
+          </div>
+            <div class="footer-left">
+              <div class="footer-box">
+              <h6>Support us</h6>
+              <ul>
+                <li><a href="https://nocturnestore.buycraft.net">Store</a></li>
+                <li><a href="https://www.patreon.com/NocturneNetwork">Patreon</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="footer-bottom-text">
+              <h2>Stay Updated</h2>
+              <input class="footer-input" type="text" id="SearchText" placeholder="Enter your email here">
+              <button class="footer-button-sub" type="submit">Subscribe</button>
+            </div>
+          </div>
+
+          <div class="footer-social-icons">
+            <ul>
+              <li><a href="#" target="blank"><img src="./img/icon-1.png" alt="icon-1"></i></a></li>
+              <li><a href="#" target="blank"><img src="./img/icon-2.png" alt="icon-2"></i></a></li>
+              <li><a href="#" target="blank"><img src="./img/icon-3.png" alt="icon-3"></i></a></li>
+              <li><a href="#" target="blank"><img src="./img/icon-4.png" alt="icon-4"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="copyright">
+
+            <div class="footer-copyright1">
+              <span>Made in the Netherlands</span>
+            </div>
+            <div class="footer-copyright2">
+              <span>Copyright &copy; Joren Metz. All rights Reserved</span>
+            </div>
+
+        </div>
+
+    </footer>
+  </body>
+</html>
